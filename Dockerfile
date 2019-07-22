@@ -12,6 +12,9 @@ RUN sudo apt-get update && apt-get install -y --no-install-recommends \
 
 ENV GOLANG_VERSION 1.12.7
 
+# Reset user to circleci
+USER circleci
+
 RUN set -eux; \
 	\
 # this "case" statement is generated via "update.sh"
