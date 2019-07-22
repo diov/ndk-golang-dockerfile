@@ -26,9 +26,6 @@ RUN sudo apt-get update && apt-get install -y --no-install-recommends \
 
 ENV GOLANG_VERSION 1.12.7
 
-# Reset user to circleci
-USER circleci
-
 RUN set -eux; \
   \
 # this "case" statement is generated via "update.sh"
@@ -65,3 +62,6 @@ ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+
+# Reset user to circleci
+USER circleci
