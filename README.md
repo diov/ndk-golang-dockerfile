@@ -1,7 +1,7 @@
 # CircleCI NDK-Golang Image
 
 [![CircleCI](https://circleci.com/gh/diov/ndk-golang-dockerfile.svg?style=svg)](https://circleci.com/gh/diov/ndk-golang-dockerfile)
-[![Golang](https://img.shields.io/badge/golang-1.13.4-blue)](https://golang.org/doc/devel/release.html#go1.13)
+[![Golang](https://img.shields.io/badge/golang-1.13.7-blue)](https://golang.org/doc/devel/release.html#go1.13)
 [![NDK](https://img.shields.io/badge/ndk-r20-green)](https://developer.android.com/ndk/downloads/revision_history)
 
 Out-of-the-box docker image which combines Android NDK(r20) and latest golang(1.13.4).
